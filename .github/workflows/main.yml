@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: "Login to Docker hub"
+      - name: "Login to Docker"
         run: docker login --username ${{ secrets.Docker_Username }} --password ${{ secrets.Docker_Token }}
 
       - name: "Building docker image"
